@@ -1,0 +1,22 @@
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.socials>img{
+    width: 4rem;
+    margin: 0 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(206, 10, 255);
+}
+
+.socials>img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,40 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 89vh;
+}
+
+.home>.home-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100%;
+}
+
+.home>.home-left>h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.home>.home-left>h1>.home-left__name--color{
+    color: rgb(190, 2, 190);
+}
+
+
+.home>.home-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100%;
+}
+
+.home>.home-right>img{
+    height: 35rem;
+    border-radius: 20%;
+}
