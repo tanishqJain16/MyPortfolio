@@ -31,10 +31,9 @@
     align-items: center;
     justify-content: center;
     width: 50vw;
-    height: 100%;
 }
 
 .home>.home-right>img{
-    height: 35rem;
+    width: 35rem;
     border-radius: 20%;
 }

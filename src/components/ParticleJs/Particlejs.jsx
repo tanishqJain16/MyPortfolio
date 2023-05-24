@@ -61,7 +61,7 @@ function Particlejs() {
                         width: 1,
                     },
                     collisions: {
-                        enable: true,
+                        enable: false,
                     },
                     move: {
                         directions: "none",
@@ -70,7 +70,7 @@ function Particlejs() {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 7,
+                        speed: 8,
                         straight: false,
                     },
                     number: {
@@ -90,7 +90,7 @@ function Particlejs() {
                         value: { min: 4, max: 8 },
                     },
                 },
-                detectRetina: true,
+                detectRetina: false,
             }}
         />
   )
