@@ -1,26 +1,33 @@
-.navbar{
-    background-color: #1a1a1a;
+.navbar {
+    /* background-color: #1a1a1a; */
+    background: transparent;
     color: #fff;
     width: 100vw;
-    height: 11vh;
+    min-height: 11vh;
     padding: 0.3rem 0rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -webkit-backdrop-filter: blur(28px);
+    backdrop-filter: blur(8px);
 }
 
-.navbar>.navbar__logo>img{
+.navbar>.navbar__logo>img {
     width: 15rem;
 }
 
-.navbar>.navbar-list>ul{
+.navbar>.navbar-list>ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
-.navbar>.navbar-list>ul>li{
+.navbar>.navbar-list>i {
+    display: none;
+}
+
+.navbar>.navbar-list>ul>li {
     list-style: none;
     margin: 0rem 1rem;
     color: #a3a2a2;
@@ -29,13 +36,13 @@
     font-size: 1.1rem;
 }
 
-.navbar>.navbar-list>ul>li>a{
+.navbar>.navbar-list>ul>li>a {
     text-decoration: none;
     color: #a3a2a2;
     padding-bottom: 0.3rem;
 }
 
-.navbar>.navbar-list>ul>li>.active{
+.navbar>.navbar-list>ul>li>.active {
     text-decoration: none;
     color: rgb(190, 2, 190);
     font-size: 1.5rem;
@@ -44,14 +51,142 @@
     border-radius: 7px;
 }
 
-.navbar>.navbar-list>ul>li>a:hover{
+.navbar>.navbar-list>ul>li>a:hover {
     color: #fff;
 }
 
-.navbar>.navbar-list>ul>li>.active:hover{
+.navbar>.navbar-list>ul>li>.active:hover {
+    color: purple;
+}
+
+.navbar>.navbar__logo-open>img {
+    width: 15rem;
+}
+
+.navbar>.navbar-list-open>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar>.navbar-list-open>i {
+    display: none;
+}
+
+.navbar>.navbar-list-open>ul>li {
+    list-style: none;
+    margin: 0rem 1rem;
+    color: #a3a2a2;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.navbar>.navbar-list-open>ul>li>a {
+    text-decoration: none;
+    color: #a3a2a2;
+    padding-bottom: 0.3rem;
+}
+
+.navbar>.navbar-list-open>ul>li>.active {
+    text-decoration: none;
+    color: rgb(190, 2, 190);
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-bottom: 3px solid rgb(190, 2, 190);
+    border-radius: 7px;
+}
+
+.navbar>.navbar-list-open>ul>li>a:hover {
+    color: #fff;
+}
+
+.navbar>.navbar-list-open>ul>li>.active:hover {
     color: purple;
 }
 
 
 
+@media screen and (max-width: 767px) {
 
+    .navbar>.navbar-list>ul {
+        display: none;
+    }
+
+    .navbar>.navbar-list>.menu {
+        display: block;
+        font-size: 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .navbar>.navbar-list>.cross{
+        display: none;
+    }
+
+    .navbar>.navbar__logo-open {
+        display: none;
+    }
+
+
+    .navbar>.navbar-list-open {
+        height: 100vh;
+        width: 100vw;
+        margin-top: 2rem;
+    }
+
+    .navbar>.navbar-list-open>ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .navbar>.navbar-list-open>.menu {
+        display: none;
+    }
+
+    .navbar>.navbar-list-open>.cross {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        font-size: 2rem;
+        margin-right: 1rem;
+        cursor: pointer;
+    }
+
+    .navbar>.navbar-list-open>ul>li {
+        list-style: none;
+        margin: 2rem 1rem;
+        color: #a3a2a2;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+
+    .navbar>.navbar-list-open>ul>li>a {
+        text-decoration: none;
+        color: #a3a2a2;
+        padding-bottom: 0.3rem;
+    }
+
+    .navbar>.navbar-list-open>ul>li>.active {
+        text-decoration: none;
+        color: rgb(190, 2, 190);
+        font-size: 2rem;
+        font-weight: 800;
+        border-bottom: 3px solid rgb(190, 2, 190);
+        border-radius: 7px;
+    }
+
+    .navbar>.navbar-list-open>ul>li>a:hover {
+        color: #fff;
+    }
+
+    .navbar>.navbar-list-open>ul>li>.active:hover {
+        color: purple;
+    }
+}

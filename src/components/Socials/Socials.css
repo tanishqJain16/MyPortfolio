@@ -20,3 +20,9 @@
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 768px){
+    .socials>img{
+        width: 3rem;
+    }
+}
