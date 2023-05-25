@@ -11,6 +11,7 @@
     -webkit-backdrop-filter: blur(28px);
     backdrop-filter: blur(28px);
     position: fixed;
+    z-index: 1000;
 }
 
 .navbar>.navbar__logo>img {
@@ -104,7 +105,7 @@
 }
 
 .navbar>.navbar-list-open>ul>li>.active:hover {
-    color: purple;
+    color: rgb(190, 2, 190);
 }
 
 
