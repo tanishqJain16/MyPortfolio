@@ -1,0 +1,151 @@
+.contact{
+    padding-top: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.contact>.card{
+    margin: 0 auto;
+    width: 50%;
+    height: 80%;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0,0,0,2);
+    background-color: rgb(34, 30, 30);
+    color: white;
+}
+
+.contact>.card>.card-header{
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    border-bottom: 2px solid rgb(250, 4, 250);
+    width: fit-content;
+    margin: 0 auto 3rem auto;
+}
+
+.contact>.card>.card-header>h1>span{
+    color: rgb(250, 4, 250);
+}
+
+.contact>.card>.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact>.card>.card-body>.fields{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .contact>.card>.card-body>.fields>label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 1rem;
+} */
+
+.contact>.card>.card-body>.fields>input{
+    width: 25vw;
+    padding: 0.5rem;
+    border: none;
+    border-bottom:2px solid rgb(250, 4, 250);
+    margin-bottom: 1rem;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+}
+
+.contact>.card>.card-body>.fields>textarea{
+    width: 25vw;
+    padding: 0.5rem;
+    border: none;
+    border-bottom:2px solid rgb(250, 4, 250);
+    margin-bottom: 1rem;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    margin: auto 0;
+}
+
+.contact>.card>.card-body>.send{
+    margin-top: 2rem;
+    padding: 0.6rem 2rem;
+    background-color: rgb(250, 4, 250);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact>.card>.card-body>.send:hover{
+    background-color: rgb(135, 31, 135);
+    transition: 0.3s;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .contact{
+        padding-top: 15vh;
+    }
+
+    .contact>.card{
+        width: 60%;
+        height: 80%;
+    }
+
+    .contact>.card>.card-header{
+        font-size: 1.2rem;
+    }
+
+    .contact>.card>.card-body>.fields>input{
+        width: 80%;
+    }
+
+    .contact>.card>.card-body>.fields>textarea{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact{
+        padding-top: 15vh;
+    }
+
+    .contact>.card{
+        width: 80%;
+        height: 80%;
+    }
+
+    .contact>.card>.card-header{
+        font-size: 1.2rem;
+    }
+
+    .contact>.card>.card-body>.fields>input{
+        width: 100%;
+    }
+
+    .contact>.card>.card-body>.fields>textarea{
+        width: 100%;
+    }
+}
+
