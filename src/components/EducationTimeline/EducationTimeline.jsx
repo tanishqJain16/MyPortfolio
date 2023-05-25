@@ -13,13 +13,13 @@ function EducationTimeline() {
                     contentStyle={{ background: '#332e2e', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
                     date="2021 - present"
-                    iconStyle={{ background: 'rgb(190, 2, 190)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(250, 4, 250)', color: '#fff' }}
                     icon={<SchoolIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{fontSize:"1.2rem"}}>Bachelor of Technology in Computer science and engineering.</h3>
-                    <h4 className="vertical-timeline-element-subtitle" style={{color:"rgb(190, 2, 190)",fontWeight:"900"}}>DIT University, Dehradun</h4>
+                    <h3 className="vertical-timeline-element-title" style={{ fontSize: "1.2rem" }}>Bachelor of Technology in Computer science and engineering.</h3>
+                    <h4 className="vertical-timeline-element-subtitle" style={{ color: "rgb(250, 4, 250)", fontWeight: "900" }}>DIT University, Dehradun</h4>
                     <p>
-                        Student <br/> 9.3 CGPA
+                        Student <br /> 9.3 CGPA
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -27,13 +27,13 @@ function EducationTimeline() {
                     contentStyle={{ background: '#332e2e', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
                     date="2019 - 2021"
-                    iconStyle={{ background: 'rgb(190, 2, 190)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(250, 4, 250)', color: '#fff' }}
                     icon={<SchoolIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{fontSize:"1.2rem"}}>Higher Secondary Education.</h3>
-                    <h4 className="vertical-timeline-element-subtitle" style={{color:"rgb(190, 2, 190)",fontWeight:"900"}}>Sidhhartha Public School, Delhi</h4>
+                    <h3 className="vertical-timeline-element-title" style={{ fontSize: "1.2rem" }}>Higher Secondary Education.</h3>
+                    <h4 className="vertical-timeline-element-subtitle" style={{ color: "rgb(250, 4, 250)", fontWeight: "900" }}>Sidhhartha Public School, Delhi</h4>
                     <p>
-                        Student <br/> Board - <span style={{color:"rgb(190, 2, 190)",fontWeight:"700"}}>CBSE</span><br/> 87.4%
+                        Student <br /> Board - <span style={{ color: "rgb(250, 4, 250)", fontWeight: "700" }}>CBSE</span><br /> 87.4%
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -41,13 +41,13 @@ function EducationTimeline() {
                     contentStyle={{ background: '#332e2e', color: '#fff' }}
                     contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
                     date="2017 - 2019"
-                    iconStyle={{ background: 'rgb(190, 2, 190)', color: '#fff' }}
+                    iconStyle={{ background: 'rgb(250, 4, 250)', color: '#fff' }}
                     icon={<SchoolIcon />}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{fontSize:"1.2rem"}}>Secondary School Education.</h3>
-                    <h4 className="vertical-timeline-element-subtitle" style={{color:"rgb(190, 2, 190)",fontWeight:"900"}}>Christu Jyothi Convent Sr. Sec. School, Baraut</h4>
+                    <h3 className="vertical-timeline-element-title" style={{ fontSize: "1.2rem" }}>Secondary School Education.</h3>
+                    <h4 className="vertical-timeline-element-subtitle" style={{ color: "rgb(250, 4, 250)", fontWeight: "900" }}>Christu Jyothi Convent Sr. Sec. School, Baraut</h4>
                     <p>
-                        Student <br/> Board - <span style={{color:"rgb(190, 2, 190)",fontWeight:"700"}}>ICSE</span><br/> 91.2%
+                        Student <br /> Board - <span style={{ color: "rgb(250, 4, 250)", fontWeight: "700" }}>ICSE</span><br /> 91.2%
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

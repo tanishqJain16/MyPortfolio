@@ -1,1 +1,1 @@
-rgb(190, 2, 190)->purple
+rgb(250, 4, 250)->purple

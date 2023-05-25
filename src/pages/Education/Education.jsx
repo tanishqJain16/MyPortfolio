@@ -1,6 +1,6 @@
 import EducationTimeline from "../../components/EducationTimeline/EducationTimeline";
 import "./Education.css";
-import educationImg from "../../assets/educationImg.png";
+import educationImg from "../../assets/educationImg.webp";
 import Particlejs from "../../components/ParticleJs/Particlejs";
 
 function Education() {

@@ -1,4 +1,4 @@
-.home{
+.home {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -6,7 +6,7 @@
     padding-top: 11vh;
 }
 
-.home>.home-left{
+.home>.home-left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,19 +15,19 @@
     height: 100%;
 }
 
-.home>.home-left>h1{
+.home>.home-left>h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
     margin-bottom: 1rem;
 }
 
-.home>.home-left>h1>.home-left__name--color{
-    color: rgb(190, 2, 190);
+.home>.home-left>h1>.home-left__name--color {
+    color: rgb(250, 4, 250);
 }
 
 
-.home>.home-right{
+.home>.home-right {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,88 +35,87 @@
     margin: 2rem;
 }
 
-.home>.home-right>img{
+.home>.home-right>img {
     width: 35rem;
     border-radius: 20%;
 }
 
-@media screen and (max-width: 1030px){
-    .home>.home-right>img{
+@media screen and (max-width: 1030px) {
+    .home>.home-right>img {
         width: 30rem;
     }
 
-    .home>.home-left>h1{
+    .home>.home-left>h1 {
         font-size: 2.5rem;
     }
 
 }
 
-@media screen and (max-width: 900px){
-    .home>.home-right>img{
+@media screen and (max-width: 900px) {
+    .home>.home-right>img {
         width: 25rem;
     }
 
-    .home>.home-left>h1{
+    .home>.home-left>h1 {
         font-size: 2rem;
     }
 
 }
 
-@media screen and (max-width: 768px){
-    .home{
+@media screen and (max-width: 768px) {
+    .home {
         flex-direction: column-reverse;
     }
 
-    .home>.home-left{
+    .home>.home-left {
         width: 100vw;
         height: 50vh;
     }
 
-    .home>.home-right{
+    .home>.home-right {
         width: 100vw;
         height: 50vh;
         margin-bottom: 0;
     }
 
-    .home>.home-right>img{
+    .home>.home-right>img {
         width: 20rem;
     }
 
-    .home>.home-left>h1{
+    .home>.home-left>h1 {
         font-size: 3rem;
         margin-bottom: 0;
     }
 }
 
-@media screen and (max-width: 424px){
-    .home>.home-right>img{
+@media screen and (max-width: 424px) {
+    .home>.home-right>img {
         width: 20rem;
     }
 
-    .home>.home-left>h1{
+    .home>.home-left>h1 {
         font-size: 2rem;
     }
 
-    .home>.home-left>h2{
+    .home>.home-left>h2 {
         font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 320px){
-    .home>.home-right>img{
+@media screen and (max-width: 320px) {
+    .home>.home-right>img {
         width: 18rem;
     }
 
-    .home>.home-left{
+    .home>.home-left {
         margin-top: -5vh;
     }
 
-    .home>.home-left>h1{
+    .home>.home-left>h1 {
         font-size: 1.8rem;
     }
 
-    .home>.home-left>h2{
+    .home>.home-left>h2 {
         font-size: 1rem;
     }
 }
-

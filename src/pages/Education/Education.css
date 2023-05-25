@@ -1,54 +1,67 @@
-.education{
+.education {
     padding-top: 11vh;
 }
 
-.education>.educationHeading{
+.education>.educationHeading {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5vh;
 }
 
-.education>.educationHeading>span{
-    color:rgb(190, 2, 190);
+.education>.educationHeading>span {
+    color: rgb(250, 4, 250);
 }
 
-.education>.educationLanding{
+.education>.educationLanding {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 89vh;
 }
 
-.education>.educationLanding>.educationLandingLeft{
-    width: 40%;
+.education>.educationLanding>.educationLandingLeft {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.education>.educationLanding>.educationLandingLeft>h1{
+.education>.educationLanding>.educationLandingLeft>h1 {
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 2vh;
 }
 
-.education>.educationLanding>.educationLandingLeft>h1>span{
-    color:rgb(190, 2, 190);
+.education>.educationLanding>.educationLandingLeft>h1>span {
+    color: rgb(250, 4, 250);
 }
 
-.education>.educationLanding>.educationLandingLeft>p{
+.education>.educationLanding>.educationLandingLeft>p {
     font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
     margin-bottom: 5vh;
 }
 
-.education>.educationLanding>.educationLandingLeft>p>span{
+.education>.educationLanding>.educationLandingLeft>p>span {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    color: rgb(190, 2, 190);
+    color: rgb(250, 4, 250);
+}
+
+.education>.educationLanding>.educationLandingRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education>.educationLanding>.educationLandingRight>img {
+    height: 30rem;
+    width: 35rem;
+    border-radius: 15%;
 }

@@ -11,7 +11,7 @@ function Home() {
             <div className="home-left">
                 <h1>{`Hi, I'm`}  <TypeAnimation
                     className="home-left__name--color"
-                    sequence={[
+                    sequence={[1000,
                         'Tanishq',
                     ]}
                     wrapper="span"
