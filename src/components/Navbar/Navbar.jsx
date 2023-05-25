@@ -19,11 +19,11 @@ function Navbar() {
             <div  className={`${menuClosed?"navbar-list":"navbar-list-open"}`}>
             <i className="fa-solid fa-xmark cross" style={{color: "#ffffff;"}} onClick={toggleMenu}></i>
                 <ul>
-                    <li><Link className={`${location.pathname==="/"?"active":""}`} to="/">Home</Link></li>
-                    <li><Link className={`${location.pathname==="/about"?"active":""}`} to="/about">About</Link></li>
-                    <li><Link className={`${location.pathname==="/education"?"active":""}`} to="/education">Education</Link></li>
-                    <li><Link className={`${location.pathname==="/projects"?"active":""}`} to="/projects">Projects</Link></li>
-                    <li><Link className={`${location.pathname==="/contact"?"active":""}`} to="/contact">Contact</Link></li>
+                    <li onClick={()=>{setMenuClosed(true)}}><Link className={`${location.pathname==="/"?"active":""}`} to="/">Home</Link></li>
+                    <li onClick={()=>{setMenuClosed(true)}}><Link className={`${location.pathname==="/about"?"active":""}`} to="/about">About</Link></li>
+                    <li onClick={()=>{setMenuClosed(true)}}><Link className={`${location.pathname==="/education"?"active":""}`} to="/education">Education</Link></li>
+                    <li onClick={()=>{setMenuClosed(true)}}><Link className={`${location.pathname==="/projects"?"active":""}`} to="/projects">Projects</Link></li>
+                    <li onClick={()=>{setMenuClosed(true)}}><Link className={`${location.pathname==="/contact"?"active":""}`} to="/contact">Contact</Link></li>
                 </ul>
                 <i className="fa fa-burger fa-xl menu" style={{color: "#ffffff;",margin:"1rem"}} onClick={toggleMenu}></i>
             </div>
