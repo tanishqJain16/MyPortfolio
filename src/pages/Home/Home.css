@@ -70,6 +70,7 @@
     .home>.home-left {
         width: 100vw;
         height: 50vh;
+        margin-top: -5vh;
     }
 
     .home>.home-right {
