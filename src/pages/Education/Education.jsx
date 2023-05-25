@@ -1,15 +1,17 @@
 import EducationTimeline from "../../components/EducationTimeline/EducationTimeline";
 import "./Education.css";
 import educationImg from "../../assets/educationImg.png";
+import Particlejs from "../../components/ParticleJs/Particlejs";
 
 function Education() {
   return (
     <div className="education">
       <div className="educationLanding">
         <div className="educationLandingLeft">
+          <Particlejs />
           <h1>Educational <span>Background</span></h1>
           <p>
-          An investment in knowledge pays the best interest. <br /> <span>– Benjamin Franklin</span>
+            An investment in knowledge pays the best interest. <br /> <span>– Benjamin Franklin</span>
           </p>
         </div>
         <div className="educationLandingRight">
