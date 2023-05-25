@@ -124,6 +124,10 @@
     .education>.educationLanding>.educationLandingLeft>p {
         font-size: 0.9rem;
     }
+
+    .education>.educationHeading{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width:768px){
