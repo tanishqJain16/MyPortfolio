@@ -96,10 +96,12 @@
     align-items: center;
 }
 
-.contact>.card>.card-body>.send:hover{
-    background-color: rgb(135, 31, 135);
-    transition: 0.3s;
+.contact>.card>.card-body>.send:disabled{
+    background-color: grey;
+    cursor: not-allowed;
 }
+
+
 
 
 

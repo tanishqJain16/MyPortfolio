@@ -1,8 +1,35 @@
+import { useState } from "react";
 import Particlejs from "../../components/ParticleJs/Particlejs";
 import "./Contact.css";
 import SendIcon from '@material-ui/icons/Send';
+import { doc, setDoc } from "firebase/firestore";
+import { db } from "../../firebase";
 
 function Contact() {
+  const [disabled, setDisabled] = useState(false);
+  const [creds, setCreds] = useState({ name: "", email: "", message: "" })
+  const handleChange = (e) => {
+    setCreds({ ...creds, [e.target.name]: e.target.value });
+  }
+
+  const handlesubmit = async (e) => {
+    setDisabled(true);
+    e.preventDefault();
+    await setDoc(doc(db, "contact", creds.email), {
+      name: creds.name,
+      email: creds.email,
+      message: creds.message
+    }).then(() => {
+      setDisabled(false);
+      alert("Message sent successfully");
+      setCreds({ name: "", email: "", message: "" });
+    }).catch((error) => {
+      setDisabled(false);
+      alert(error.message);
+    }
+    );
+  }
+
   return (
     <div className="contact">
       <Particlejs />
@@ -13,17 +40,17 @@ function Contact() {
         <div className="card-body">
           <div className="fields">
             {/* <label htmlFor="name">Name:</label> */}
-            <input type="text" id="name" name="name" placeholder="Your name.." />
+            <input type="text" id="name" name="name" placeholder="Your name.." onChange={handleChange} />
           </div>
           <div className="fields">
             {/* <label htmlFor="email">Email:</label> */}
-            <input type="email" id="email" name="email" placeholder="Your Email.." />
+            <input type="email" id="email" name="email" placeholder="Your Email.." onChange={handleChange} />
           </div>
           <div className="fields">
             {/* <label htmlFor="message">Message:</label> */}
-            <textarea rows={4} type="text" id="message" name="message" placeholder="Your message.." />
+            <textarea rows={4} type="text" id="message" name="message" placeholder="Your message.." onChange={handleChange} />
           </div>
-          <button className="send" style={{ fontFamily: "Arial, FontAwesome" }}>SEND &nbsp; <SendIcon /></button>
+          <button className="send" disabled={disabled} onClick={handlesubmit} style={{ fontFamily: "Arial, FontAwesome" }}>SEND &nbsp; <SendIcon /></button>
         </div>
       </div>
     </div>
