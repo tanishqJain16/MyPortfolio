@@ -13,8 +13,13 @@ function Contact() {
   }
 
   const handlesubmit = async (e) => {
-    setDisabled(true);
     e.preventDefault();
+    setDisabled(true);
+    if(creds.name === "" || creds.email === "" || creds.message === ""){
+      alert("Please fill all the fields");
+      setDisabled(false);
+      return;
+    }
     await setDoc(doc(db, "contact", creds.email), {
       name: creds.name,
       email: creds.email,
@@ -40,15 +45,15 @@ function Contact() {
         <div className="card-body">
           <div className="fields">
             {/* <label htmlFor="name">Name:</label> */}
-            <input type="text" id="name" name="name" placeholder="Your name.." onChange={handleChange} />
+            <input type="text" id="name" name="name" placeholder="Your name.." onChange={handleChange} required />
           </div>
           <div className="fields">
             {/* <label htmlFor="email">Email:</label> */}
-            <input type="email" id="email" name="email" placeholder="Your Email.." onChange={handleChange} />
+            <input type="email" id="email" name="email" placeholder="Your Email.." onChange={handleChange} required />
           </div>
           <div className="fields">
             {/* <label htmlFor="message">Message:</label> */}
-            <textarea rows={4} type="text" id="message" name="message" placeholder="Your message.." onChange={handleChange} />
+            <textarea rows={4} type="text" id="message" name="message" placeholder="Your message.." onChange={handleChange} required />
           </div>
           <button className="send" disabled={disabled} onClick={handlesubmit} style={{ fontFamily: "Arial, FontAwesome" }}>SEND &nbsp; <SendIcon /></button>
         </div>
