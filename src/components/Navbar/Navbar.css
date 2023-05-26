@@ -76,7 +76,7 @@
 .navbar>.navbar-list-open>ul>li {
     list-style: none;
     margin: 0rem 1rem;
-    color: #a3a2a2;
+    color: #fff;
     cursor: pointer;
     font-weight: 600;
     font-size: 1.1rem;
@@ -84,7 +84,7 @@
 
 .navbar>.navbar-list-open>ul>li>a {
     text-decoration: none;
-    color: #a3a2a2;
+    color: #fff;
     padding-bottom: 0.3rem;
 }
 

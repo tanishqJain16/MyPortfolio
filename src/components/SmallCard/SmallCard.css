@@ -1,0 +1,70 @@
+.smallCard {
+    width: 30rem;
+    margin:50px 0.5rem 0 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* cursor: pointer; */
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.smallCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.smallCardP{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.219);
+    backdrop-filter: blur(10px);
+    padding: 0.3rem;
+    transition: all 0.3s;
+    transform: translateY(80%);
+}
+
+.smallCardP p{
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.smallCard:hover .smallCardP{
+    transform: translateY(0);
+    align-items: center;
+    justify-content: center;
+}
+
+.smallCard>.smallCardP>.smallCard__icon>svg{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    fill: #000;
+    cursor: pointer;
+}
+
+.smallCard:hover .smallCardP p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+@media screen and (max-width: 500px){
+    .smallCard{
+        width: 20rem;
+    }
+}
