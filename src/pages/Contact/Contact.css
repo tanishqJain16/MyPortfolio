@@ -14,8 +14,10 @@
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0,0,0,2);
-    background-color: rgb(34, 30, 30);
+    /* background-color: rgb(34, 30, 30); */
     color: white;
+    background-color: rgba(110, 110, 110, 0.219);
+    backdrop-filter: blur(10px);
 }
 
 .contact>.card>.card-header{

@@ -1,0 +1,205 @@
+.experience{
+    padding-top: 11vh;
+}
+
+
+.experience>.experienceHeading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.experience>.experienceHeading>span {
+    color: rgb(250, 4, 250);
+}
+
+.experience>.experienceLanding {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 89vh;
+}
+
+.experience>.experienceLanding>.experienceLandingLeft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience>.experienceLanding>.experienceLandingLeft>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.experience>.experienceLanding>.experienceLandingLeft>h1>span {
+    color: rgb(250, 4, 250);
+}
+
+.experience>.experienceLanding>.experienceLandingLeft>p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.experience>.experienceLanding>.experienceLandingLeft>p>span {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(250, 4, 250);
+}
+
+.experience>.experienceLanding>.experienceLandingRight {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience>.experienceLanding>.experienceLandingRight>img {
+    height: 25rem;
+    width: 35rem;
+    border-radius: 15%;
+}
+
+@media screen and (max-width:1024px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 23rem;
+        width: 28rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 2.2rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:900px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 20rem;
+        width: 25rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 2rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:800px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 18rem;
+        width: 23rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 0.9rem;
+    }
+
+    .experience>.experienceHeading{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .experience>.experienceLanding {
+        flex-direction: column-reverse;
+        margin-top: 2vh;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft {
+        width: 100%;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 2.5rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 1.2rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingRight {
+        width: 100%;
+    }
+
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 25rem;
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width:530px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 20rem;
+        width: 25rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 2rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:420px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 20rem;
+        width: 23rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:376px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 15rem;
+        width: 21rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 1.6rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:320px){
+    .experience>.experienceLanding>.experienceLandingRight>img {
+        height: 15rem;
+        width: 19rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>h1 {
+        font-size: 1.8rem;
+    }
+
+    .experience>.experienceLanding>.experienceLandingLeft>p {
+        font-size: 0.8rem;
+    }
+}

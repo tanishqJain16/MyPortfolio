@@ -1,9 +1,10 @@
+import Particlejs from "../../components/ParticleJs/Particlejs";
 import "./About.css";
 
 function About() {
   return (
-    <div>
-      This is the About page
+    <div className="about">
+      <Particlejs/>
     </div>
   )
 }

@@ -6,9 +6,9 @@ import Particlejs from "../../components/ParticleJs/Particlejs";
 function Education() {
   return (
     <div className="education">
+      <Particlejs />
       <div className="educationLanding">
         <div className="educationLandingLeft">
-          <Particlejs />
           <h1>Educational <span>Background</span></h1>
           <p>
             An investment in knowledge pays the best interest. <br /> <span>– Benjamin Franklin</span>

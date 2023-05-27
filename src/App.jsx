@@ -6,6 +6,7 @@ import Project from './pages/Projects/Project'
 import Education from './pages/Education/Education'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
+import Experience from './pages/Experience/Experience'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/education" element={<Education/>}/>
         <Route path="/projects" element={<Project/>}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/experience" element={<Experience/>}/>
       </Routes>
      </Router>
     </>
