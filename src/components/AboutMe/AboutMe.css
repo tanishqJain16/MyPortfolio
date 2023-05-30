@@ -185,7 +185,7 @@
     }
 
     .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
-        width: 15rem;
+        width: 19rem;
     }
 
     .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
@@ -200,6 +200,30 @@
         width: 7rem;
         height: 2.5rem;
         font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .aboutMe>.aboutMeRight{
+        width: 90%;
+    }
+
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
+        width: 17rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
+        font-size: 1.8rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p{
+        font-size: 0.8rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button{
+        width: 6rem;
+        height: 2.5rem;
+        font-size: 0.7rem;
     }
 }
 

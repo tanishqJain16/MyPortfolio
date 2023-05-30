@@ -16,16 +16,17 @@ function Home() {
             <Particlejs />
             <div className="homeLanding">
                 <div className="home-left">
-                    <Fade cascade className="fade" duration={2000} triggerOnce={true}><h1>{`Hi, I'm`}  <TypeAnimation
-                        className="home-left__name--color"
-                        sequence={[1000,
-                            'Tanishq',
-                        ]}
-                        wrapper="span"
-                        cursor={true}
-                        repeat={0}
-                        style={{ display: 'inline-block' }}
-                    /></h1>
+                    <Fade cascade className="fade" duration={2000} triggerOnce={true}>
+                        <h1>{`Hi, I'm`}  <TypeAnimation
+                            className="home-left__name--color"
+                            sequence={[1000,
+                                'Tanishq',
+                            ]}
+                            wrapper="span"
+                            cursor={true}
+                            repeat={0}
+                            style={{ display: 'inline-block' }}
+                        /></h1>
                         <h2 className="home-left__subheading"><TypeAnimation
                             className="home-left__subheading--color"
                             sequence={[

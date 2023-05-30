@@ -140,13 +140,13 @@
         flex-direction: column-reverse;
     }
 
-    .home>.homeLanding>.home-left>.fade {
+    .home>.homeLanding>.home-left {
         width: 100vw;
         height: 50vh;
         margin-top: -9vh;
     }
 
-    .home>.homeLanding>.home-right>.fade {
+    .home>.homeLanding>.home-right{
         width: 100vw;
         height: 50vh;
         margin-bottom: 0;
@@ -192,7 +192,7 @@
         width: 18rem;
     }
 
-    .home>.homeLanding>.home-left>.fade {
+    .home>.homeLanding>.home-left {
         margin-top: -9vh;
     }
 
@@ -203,4 +203,11 @@
     .home>.homeLanding>.home-left>.fade>h2 {
         font-size: 1rem;
     }
+
+    .home>.homeLanding>.home-left>.fade>.homeButtons>button {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+    
 }

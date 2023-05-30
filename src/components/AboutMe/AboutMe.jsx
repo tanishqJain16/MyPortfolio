@@ -11,14 +11,14 @@ function AboutMe() {
     return (
         <div className="aboutMe">
             <div className="aboutMeLeft">
-                <Fade className="fade" duration={2000} triggerOnce={true} delay={500}>
+                <Fade className="fade" duration={2000} triggerOnce={true} delay={500} cascade>
                     <div className="aboutMeLeft__img">
                         <img src={aboutImg} alt="aboutme-img" />
                     </div>
                 </Fade>
             </div>
             <div className="aboutMeRight">
-                <Fade className="fade" duration={2000} triggerOnce={true} delay={1000}>
+                <Fade className="fade" duration={2000} triggerOnce={true} delay={1000} cascade>
                     <div className="aboutHeading">
                         <h1><span>About</span> Me</h1>
                     </div>

@@ -25,7 +25,11 @@
     padding: 1rem;
 }
 
-.navbar>.navbar-list>i {
+.navbar>.navbar-list>.menu {
+    display: none;
+}
+
+.navbar>.navbar-list>.cross {
     display: none;
 }
 
