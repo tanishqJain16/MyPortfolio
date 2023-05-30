@@ -1,1 +1,1 @@
-rgb(250, 4, 250)->purple
+#ce0aff->purple

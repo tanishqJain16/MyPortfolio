@@ -7,6 +7,7 @@ import Education from './pages/Education/Education'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
 import Experience from './pages/Experience/Experience'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/experience" element={<Experience/>}/>
       </Routes>
+      <Footer/>
      </Router>
     </>
   )

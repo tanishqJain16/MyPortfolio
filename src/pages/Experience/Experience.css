@@ -1,4 +1,4 @@
-.experience{
+.experience {
     padding-top: 11vh;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .experience>.experienceHeading>span {
-    color: rgb(250, 4, 250);
+    color: #ce0aff;
 }
 
 .experience>.experienceLanding {
@@ -37,7 +37,7 @@
 }
 
 .experience>.experienceLanding>.experienceLandingLeft>h1>span {
-    color: rgb(250, 4, 250);
+    color: #ce0aff;
 }
 
 .experience>.experienceLanding>.experienceLandingLeft>p {
@@ -51,7 +51,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    color: rgb(250, 4, 250);
+    color: #ce0aff;
 }
 
 .experience>.experienceLanding>.experienceLandingRight {
@@ -67,7 +67,7 @@
     border-radius: 15%;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 23rem;
         width: 28rem;
@@ -82,7 +82,7 @@
     }
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:900px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 20rem;
         width: 25rem;
@@ -97,7 +97,7 @@
     }
 }
 
-@media screen and (max-width:800px){
+@media screen and (max-width:800px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 18rem;
         width: 23rem;
@@ -111,12 +111,12 @@
         font-size: 0.9rem;
     }
 
-    .experience>.experienceHeading{
+    .experience>.experienceHeading {
         font-size: 2rem;
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
     .experience>.experienceLanding {
         flex-direction: column-reverse;
         margin-top: 2vh;
@@ -144,7 +144,7 @@
     }
 }
 
-@media screen and (max-width:530px){
+@media screen and (max-width:530px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 20rem;
         width: 25rem;
@@ -159,7 +159,7 @@
     }
 }
 
-@media screen and (max-width:420px){
+@media screen and (max-width:420px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 20rem;
         width: 23rem;
@@ -174,7 +174,7 @@
     }
 }
 
-@media screen and (max-width:376px){
+@media screen and (max-width:376px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 15rem;
         width: 21rem;
@@ -189,7 +189,7 @@
     }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:320px) {
     .experience>.experienceLanding>.experienceLandingRight>img {
         height: 15rem;
         width: 19rem;

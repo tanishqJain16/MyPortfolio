@@ -1,0 +1,141 @@
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 11vh;
+}
+
+.aboutMe>.aboutMeRight>.aboutHeading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: -3.5rem;
+}
+
+.aboutMe>.aboutMeRight>.aboutHeading>h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.aboutMe>.aboutMeRight>.aboutHeading>h1>span{
+    color: #ce0aff;
+}
+
+.aboutMe>.aboutMeRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    margin: 2rem;
+}
+
+.aboutMe>.aboutMeLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 2rem;
+}
+
+.aboutMe>.aboutMeLeft>.aboutMeLeft__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutMe>.aboutMeLeft>.aboutMeLeft__img>img{
+    width: 35rem;
+    border-radius: 20%;
+}
+
+.aboutMe>.aboutMeRight>.aboutMeRight__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.aboutMe>.aboutMeRight>.aboutMeRight__content>p{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.aboutMe>.aboutMeRight>.aboutMeRight__content>p>span{
+    color: #ce0aff;
+    font-weight: 900;
+}
+
+.aboutMe>.aboutMeRight>.aboutMeRight__content>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ce0aff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+    margin: 1rem;
+}
+
+.aboutMe>.aboutMeRight>.aboutMeRight__content>button:hover{
+    background-color: rgba(206, 10, 255, 0.5);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px){
+    .aboutMe>.aboutMeLeft>.aboutMeLeft__img>img{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aboutMe{
+        flex-direction: column;
+    }
+
+    .aboutMe>.aboutMeRight{
+        width: 90%;
+        text-align: center;
+    }
+
+    .aboutMe>.aboutMeLeft{
+        width: 100%;
+    }
+
+    .aboutMe>.aboutMeLeft>.aboutMeLeft__img>img{
+        width: 20rem;
+    }
+
+    .aboutMe>.aboutMeRight>.aboutHeading>h1{
+        font-size: 2rem;
+    }
+
+    .aboutMe>.aboutMeRight>.aboutMeRight__content>p{
+        font-size: 0.9rem;
+    }
+
+    .aboutMe>.aboutMeRight>.aboutMeRight__content>button{
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+

@@ -9,7 +9,7 @@
 }
 
 .socials>img{
-    width: 4rem;
+    width: 3rem;
     margin: 0 1rem;
     cursor: pointer;
     border-radius: 50%;
@@ -22,7 +22,10 @@
 }
 
 @media screen and (max-width: 768px){
+    .socials{
+        margin: 0;
+    }
     .socials>img{
-        width: 3rem;
+        width: 2rem;
     }
 }
