@@ -8,7 +8,7 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 
 function Home() {
     const handleAboutMe = () => {
-        window.scrollTo({ left: 0, top: 1000, behavior: "smooth" });
+        window.scrollTo({ left: 0, top: 800, behavior: "smooth" });
     }
     return (
         <div className="home">
