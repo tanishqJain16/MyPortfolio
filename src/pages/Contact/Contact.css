@@ -90,17 +90,19 @@
     color: white;
     font-weight: 600;
     font-size: 1.2rem;
-    border-radius: 50px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
 }
 
 .contact>.card>.card-body>.send:hover {
     scale: 1.2;
     transition: 0.3s ease-in-out;
+    background-color: rgba(206, 10, 255, 0.5);
 }
 
 .contact>.card>.card-body>.send:disabled {

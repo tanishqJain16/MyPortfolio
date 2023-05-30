@@ -7,7 +7,7 @@
     padding-top: 11vh;
 }
 
-.aboutMe>.aboutMeRight>.aboutHeading{
+.aboutMe>.aboutMeRight>.fade>.aboutHeading{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,14 +16,14 @@
     margin-top: -3.5rem;
 }
 
-.aboutMe>.aboutMeRight>.aboutHeading>h1{
+.aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
     font-size: 2.5rem;
     font-weight: 800;
     color: #fff;
     margin-bottom: 1rem;
 }
 
-.aboutMe>.aboutMeRight>.aboutHeading>h1>span{
+.aboutMe>.aboutMeRight>.fade>.aboutHeading>h1>span{
     color: #ce0aff;
 }
 
@@ -44,19 +44,19 @@
     margin: 2rem;
 }
 
-.aboutMe>.aboutMeLeft>.aboutMeLeft__img{
+.aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.aboutMe>.aboutMeLeft>.aboutMeLeft__img>img{
-    width: 35rem;
+.aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
+    width: 33rem;
     border-radius: 20%;
 }
 
-.aboutMe>.aboutMeRight>.aboutMeRight__content{
+.aboutMe>.aboutMeRight>.fade>.aboutMeRight__content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,19 +64,19 @@
     width: 100%;
 }
 
-.aboutMe>.aboutMeRight>.aboutMeRight__content>p{
+.aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p{
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
     margin-bottom: 1rem;
 }
 
-.aboutMe>.aboutMeRight>.aboutMeRight__content>p>span{
+.aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p>span{
     color: #ce0aff;
     font-weight: 900;
 }
 
-.aboutMe>.aboutMeRight>.aboutMeRight__content>button{
+.aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,14 +94,48 @@
     margin: 1rem;
 }
 
-.aboutMe>.aboutMeRight>.aboutMeRight__content>button:hover{
+.aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button:hover{
     background-color: rgba(206, 10, 255, 0.5);
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1200px){
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
+        width: 30rem;
+    }
+}
+
 @media screen and (max-width: 1000px){
-    .aboutMe>.aboutMeLeft>.aboutMeLeft__img>img{
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
         width: 25rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .aboutMe>.aboutMeRight{
+        width: 40%;
+    }
+
+    .aboutMe>.aboutMeLeft{
+        width: 50%;
+    }
+
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
+        width: 20rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
+        font-size: 2.2rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p{
+        font-size: 1rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button{
+        width: 9rem;
+        height: 2.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -111,7 +145,7 @@
     }
 
     .aboutMe>.aboutMeRight{
-        width: 90%;
+        width: 70%;
         text-align: center;
     }
 
@@ -119,26 +153,53 @@
         width: 100%;
     }
 
-    .aboutMe>.aboutMeLeft>.aboutMeLeft__img{
-        margin-top: 17vh;
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img{
+        margin-top: 7vh;
     }
 
-    .aboutMe>.aboutMeLeft>.aboutMeLeft__img>img{
-        width: 15rem;
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
+        width: 19rem;
     }
 
-    .aboutMe>.aboutMeRight>.aboutHeading>h1{
+    .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
         font-size: 2rem;
+        margin-bottom: 0;
     }
 
-    .aboutMe>.aboutMeRight>.aboutMeRight__content>p{
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p{
         font-size: 0.9rem;
+        margin-top: -2vh;
     }
 
-    .aboutMe>.aboutMeRight>.aboutMeRight__content>button{
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button{
         width: 8rem;
         height: 2.5rem;
         font-size: 0.9rem;
+        margin-top: -1vh
+    }
+}
+
+@media screen and (max-width: 600px){
+    .aboutMe>.aboutMeRight{
+        width: 80%;
+    }
+
+    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
+        width: 15rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
+        font-size: 1.8rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p{
+        font-size: 0.8rem;
+    }
+
+    .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button{
+        width: 7rem;
+        height: 2.5rem;
+        font-size: 0.8rem;
     }
 }
 
