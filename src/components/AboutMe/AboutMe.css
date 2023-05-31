@@ -33,7 +33,7 @@
     align-items: center;
     justify-content: center;
     width: 30%;
-    margin: 2rem;
+    margin-top: 2rem;
 }
 
 .aboutMe>.aboutMeLeft{
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     width: 50%;
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 
 .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img{
@@ -152,13 +152,13 @@
     .aboutMe>.aboutMeLeft{
         width: 100%;
     }
-
-    .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img{
+    
+    /* .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img{
         margin-top: 7vh;
-    }
+    } */
 
     .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
-        width: 19rem;
+        width: 22rem;
     }
 
     .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
@@ -185,7 +185,7 @@
     }
 
     .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
-        width: 19rem;
+        width: 21rem;
     }
 
     .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
@@ -209,21 +209,23 @@
     }
 
     .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
-        width: 17rem;
+        width: 22rem;
     }
 
     .aboutMe>.aboutMeRight>.fade>.aboutHeading>h1{
-        font-size: 1.8rem;
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 
     .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
     }
 
     .aboutMe>.aboutMeRight>.fade>.aboutMeRight__content>button{
-        width: 6rem;
-        height: 2.5rem;
-        font-size: 0.7rem;
+        width: 7rem;
+        height: 2.7rem;
+        font-size: 0.9rem;
     }
 }
 

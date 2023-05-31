@@ -9,7 +9,7 @@ import { Fade } from "react-awesome-reveal";
 
 function Home() {
     const handleAboutMe = () => {
-        window.scrollTo({ left: 0, top: 790, behavior: "smooth" });
+        window.scrollTo({ left: 0, top: 1000, behavior: "smooth" });
     }
     return (
         <div className="home">
