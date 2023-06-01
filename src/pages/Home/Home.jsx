@@ -8,9 +8,12 @@ import AboutMe from "../../components/AboutMe/AboutMe";
 import { Fade } from "react-awesome-reveal";
 
 function Home() {
+    let pageHeight = window.innerHeight;
+    // let scrollDistance = document.documentElement.clientHeight;
     const handleAboutMe = () => {
-        window.scrollTo({ left: 0, top: 1000, behavior: "smooth" });
+        window.scrollTo({ left: 0, top: pageHeight, behavior: "smooth" });
     }
+
     return (
         <div className="home">
             <Particlejs />

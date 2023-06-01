@@ -1,9 +1,8 @@
 .aboutMe{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
+    justify-content: space-around;
+    min-height: 89vh;
     padding-top: 11vh;
 }
 
@@ -152,10 +151,6 @@
     .aboutMe>.aboutMeLeft{
         width: 100%;
     }
-    
-    /* .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img{
-        margin-top: 7vh;
-    } */
 
     .aboutMe>.aboutMeLeft>.fade>.aboutMeLeft__img>img{
         width: 22rem;
