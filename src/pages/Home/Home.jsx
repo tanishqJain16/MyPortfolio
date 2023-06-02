@@ -3,9 +3,8 @@ import landingimg from "../../assets/landing-image.jpg"
 import { TypeAnimation } from "react-type-animation";
 import Particlejs from "../../components/ParticleJs/Particlejs";
 import Socials from "../../components/Socials/Socials";
-// import { Link } from "react-router-dom";
 import AboutMe from "../../components/AboutMe/AboutMe";
-import { Fade } from "react-awesome-reveal";
+// import { Fade } from "react-awesome-reveal";
 
 function Home() {
     let pageHeight = window.innerHeight;
@@ -19,7 +18,6 @@ function Home() {
             <Particlejs />
             <div className="homeLanding">
                 <div className="home-left">
-                    <Fade cascade className="fade" duration={2000} triggerOnce={true}>
                         <h1>{`Hi, I'm`}  <TypeAnimation
                             className="home-left__name--color"
                             sequence={[1000,
@@ -53,12 +51,9 @@ function Home() {
                             <button className="aboutMeBtn" onClick={handleAboutMe}>About Me
                             </button>
                         </div>
-                    </Fade>
                 </div>
                 <div className="home-right">
-                    <Fade className="fade" duration={5000} delay={1000} triggerOnce={true}>
                         <img src={landingimg} alt="landing-img" className="home-right__img" />
-                    </Fade>
                 </div>
             </div>
             <div className="homeAbout">

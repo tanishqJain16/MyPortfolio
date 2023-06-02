@@ -1,7 +1,7 @@
 import "./AboutMe.css"
 import aboutImg from "../../assets/aboutMe.jpeg"
 import { useNavigate } from "react-router-dom"
-import { Fade } from "react-awesome-reveal";
+// import { Fade } from "react-awesome-reveal";
 
 function AboutMe() {
     const navigate = useNavigate();
@@ -11,14 +11,11 @@ function AboutMe() {
     return (
         <div className="aboutMe">
             <div className="aboutMeLeft">
-                <Fade className="fade" duration={2000} triggerOnce={true} delay={500} cascade>
                     <div className="aboutMeLeft__img">
                         <img src={aboutImg} alt="aboutme-img" />
                     </div>
-                </Fade>
             </div>
             <div className="aboutMeRight">
-                <Fade className="fade" duration={2000} triggerOnce={true} delay={1000} cascade>
                     <div className="aboutHeading">
                         <h1><span>About</span> Me</h1>
                     </div>
@@ -30,7 +27,6 @@ function AboutMe() {
                             Contact Me
                         </button>
                     </div>
-                </Fade>
             </div>
         </div>
     )

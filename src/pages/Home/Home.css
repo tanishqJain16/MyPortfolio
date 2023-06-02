@@ -15,14 +15,14 @@
     height: 100%;
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons {
+.home>.homeLanding>.home-left>.homeButtons {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons>button {
+.home>.homeLanding>.home-left>.homeButtons>button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,38 +41,38 @@
     border: 2px solid white;
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons>.cvbtn>a {
+.home>.homeLanding>.home-left>.homeButtons>.cvbtn>a {
     text-decoration: none;
     color: #fff;
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons>.aboutMeBtn {
+.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn {
     background-color: #ce0aff;
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons>.aboutMeBtn>a {
+.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn>a {
     text-decoration: none;
     color: #fff;
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons>.aboutMeBtn:hover {
+.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn:hover {
     background-color: rgba(250, 4, 250, 0.319);
     transform: scale(1.1);
 }
 
-.home>.homeLanding>.home-left>.fade>.homeButtons>button:hover {
+.home>.homeLanding>.home-left>.homeButtons>button:hover {
     background-color: rgba(110, 110, 110, 0.319);
     transform: scale(1.1);
 }
 
-.home>.homeLanding>.home-left>.fade>h1 {
+.home>.homeLanding>.home-left>h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #fff;
     margin-bottom: 1rem;
 }
 
-.home>.homeLanding>.home-left>.fade>h1>.home-left__name--color {
+.home>.homeLanding>.home-left>h1>.home-left__name--color {
     color: #ce0aff;
 }
 
@@ -85,7 +85,7 @@
     /* margin: 2rem; */
 }
 
-.home>.homeLanding>.home-right>.fade>img {
+.home>.homeLanding>.home-right>img {
     width: 35rem;
     border-radius: 20%;
 }
@@ -110,26 +110,26 @@
 
 
 @media screen and (max-width: 1030px) {
-    .home>.homeLanding>.home-left>.fade>h1 {
+    .home>.homeLanding>.home-left>h1 {
         font-size: 2.5rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>h2 {
+    .home>.homeLanding>.home-left>h2 {
         font-size: 1.5rem;
     }
 
 }
 
 @media screen and (max-width: 900px) {
-    .home>.homeLanding>.home-left>.fade>h1 {
+    .home>.homeLanding>.home-left>h1 {
         font-size: 2rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>h2 {
+    .home>.homeLanding>.home-left>h2 {
         font-size: 1.2rem;
     }
 
-    .home>.homeLanding>.home-right>.fade>img {
+    .home>.homeLanding>.home-right>img {
         width: 25rem;
     }
 }
@@ -151,20 +151,20 @@
         margin-bottom: 0;
     }
 
-    .home>.homeLanding>.home-right>.fade>img {
+    .home>.homeLanding>.home-right>img {
         width: 20rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>h1 {
+    .home>.homeLanding>.home-left>h1 {
         font-size: 2.5rem;
         margin-bottom: 0;
     }
 
-    .home>.homeLanding>.home-left>.fade>h2 {
+    .home>.homeLanding>.home-left>h2 {
         font-size: 1.5rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>.homeButtons {
+    .home>.homeLanding>.home-left>.homeButtons {
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -172,19 +172,19 @@
 }
 
 @media screen and (max-width: 424px) {
-    .home>.homeLanding>.home-right>.fade>img {
+    .home>.homeLanding>.home-right>img {
         width: 20rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>h1 {
+    .home>.homeLanding>.home-left>h1 {
         font-size: 2rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>h2 {
+    .home>.homeLanding>.home-left>h2 {
         font-size: 1.2rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>.homeButtons>button {
+    .home>.homeLanding>.home-left>.homeButtons>button {
         width: 8rem;
         height: 2.5rem;
         font-size: 1rem;
@@ -192,7 +192,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .home>.homeLanding>.home-right>.fade>img {
+    .home>.homeLanding>.home-right>img {
         width: 18rem;
     }
 
@@ -200,15 +200,15 @@
         margin-top: -9vh;
     }
 
-    .home>.homeLanding>.home-left>.fade>h1 {
+    .home>.homeLanding>.home-left>h1 {
         font-size: 1.8rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>h2 {
+    .home>.homeLanding>.home-left>h2 {
         font-size: 1rem;
     }
 
-    .home>.homeLanding>.home-left>.fade>.homeButtons>button {
+    .home>.homeLanding>.home-left>.homeButtons>button {
         width: 8rem;
         height: 2.5rem;
         font-size: 1rem;
