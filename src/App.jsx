@@ -7,6 +7,7 @@ import Education from './pages/Education/Education'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
 import Experience from './pages/Experience/Experience'
+import Page404 from './pages/Page404/Page404'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/projects" element={<Project/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/experience" element={<Experience/>}/>
+        <Route path="*" element={<Page404/>}/>
       </Routes>
      </Router>
     </>

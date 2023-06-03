@@ -1,0 +1,46 @@
+.page404{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-y:hidden ;
+    background-image: url("../../assets/404img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.page404>.goBackBtn{
+    margin-top: 2rem;
+    padding: 0.6rem 2rem;
+    background-color: #ce0aff;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.page404>.goBackBtn:hover{
+    background-color: #fff;
+    color: #ce0aff;
+    border: 2px solid #ce0aff;
+}
+
+.page404>.heading404{
+    z-index: 2;
+    font-size: 10rem;
+    color: #ce0aff;
+    font-weight: 900;
+}
+
+.page404>.heading404>span{
+    color: #fff;
+}
