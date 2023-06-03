@@ -1,5 +1,6 @@
 .education {
     padding-top: 11vh;
+    overflow-x: hidden;
 }
 
 .education>.educationHeading {
