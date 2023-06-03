@@ -2,12 +2,17 @@ import "./AboutMe.css"
 import aboutImg from "../../assets/aboutMe.jpeg"
 import { useNavigate } from "react-router-dom"
 // import { Fade } from "react-awesome-reveal";
+import ScrollReveal from "scrollreveal";
 
 function AboutMe() {
     const navigate = useNavigate();
     const handleContactMe = () => {
         navigate("/contact");
     }
+    ScrollReveal().reveal('.aboutMeLeft' , {delay: 500, duration: 1000});
+    ScrollReveal().reveal('.aboutHeading' , {delay: 1000, duration: 1000});
+    ScrollReveal().reveal('.aboutMeRight__content' , {delay: 1500, duration: 1000});
+    ScrollReveal().reveal('.contactMeBtn' , {delay: 2000, duration: 1000});
     return (
         <div className="aboutMe">
             <div className="aboutMeLeft">
