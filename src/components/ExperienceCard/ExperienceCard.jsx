@@ -1,6 +1,13 @@
+import { useEffect } from "react"
 import "./ExperienceCard.css"
+import ScrollReveal from "scrollreveal"
 
 function ExperienceCard(props) {
+    
+    useEffect(() => {
+        ScrollReveal().reveal(".expCard" , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
+    }, [])
+
     return (
         <div className="expCard">
             <div className="expCardLeft">               {/* eslint-disable-next-line react/prop-types */}

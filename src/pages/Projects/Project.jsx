@@ -4,8 +4,14 @@ import myportfolioimg from "../../assets/myportfolio-img.png";
 import sphurtiimg from "../../assets/sphurti-img.png";
 import SmallCard from "../../components/SmallCard/SmallCard";
 import Particlejs from "../../components/ParticleJs/Particlejs";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 function Project() {
+  useEffect(() => {
+    ScrollReveal().reveal(".project__container__title",{delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
+    ScrollReveal().reveal(".project__container__card",{delay: 1000, duration: 1000 , origin: 'top', distance: '50px'});
+  }, []);
   return (
     <div className="project">
       <Particlejs/>

@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Particlejs from "../../components/ParticleJs/Particlejs";
 import "./Contact.css";
 import SendIcon from '@material-ui/icons/Send';
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "../../firebase";
+import ScrollReveal from "scrollreveal";
 
 function Contact() {
   const [disabled, setDisabled] = useState(false);
@@ -11,6 +12,10 @@ function Contact() {
   const handleChange = (e) => {
     setCreds({ ...creds, [e.target.name]: e.target.value });
   }
+
+  useEffect(() => {
+    ScrollReveal().reveal(".contact" , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
+  }, [])
 
   const handlesubmit = async (e) => {
     e.preventDefault();

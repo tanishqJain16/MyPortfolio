@@ -4,15 +4,23 @@ import experienceImg from "../../assets/experienceImg.webp"
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard"
 import gssoc from "../../assets/gssoc.jpg"
 import ieee from "../../assets/ieee.jpeg"
+import ScrollReveal from "scrollreveal"
+import { useEffect } from "react"
 
 function Experience() {
+    useEffect(() => {
+        ScrollReveal().reveal(".experienceLandingHeading" , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
+        ScrollReveal().reveal(".experienceLandingHeadingPara" , {delay: 1000, duration: 1000 , origin: 'left', distance: '50px'});
+        ScrollReveal().reveal(".experienceLandingRight" , {delay: 1500, duration: 1000 , origin: 'right', distance: '50px'});
+        ScrollReveal().reveal(".experienceHeading" , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
+    }, [])
     return (
         <div className="experience">
             <Particlejs />
             <div className="experienceLanding">
                 <div className="experienceLandingLeft">
-                    <h1>My <span>Experience</span></h1>
-                    <p>
+                    <h1 className="experienceLandingHeading">My <span>Experience</span></h1>
+                    <p className="experienceLandingHeadingPara">
                        {` Nothing ever becomes real 'til it is experienced.`} <br /> <span>― John Keats.</span>
                     </p>
                 </div>
