@@ -2,7 +2,7 @@ import "./Project.css";
 import jsrimg from "../../assets/jsr-img.png";
 import myportfolioimg from "../../assets/myportfolio-img.png";
 import sphurtiimg from "../../assets/sphurti-img.png";
-import newsappimg from "../../assets/newsappimg.png";
+import newsappimg from "../../assets/newsappImg.png";
 import youthopiaImg from "../../assets/youthopiaImg.png";
 import SmallCard from "../../components/SmallCard/SmallCard";
 import Particlejs from "../../components/ParticleJs/Particlejs";
