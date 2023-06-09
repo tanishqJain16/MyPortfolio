@@ -27,7 +27,7 @@ function Project() {
           <SmallCard img={jsrimg} title={"JSR Forms"} github={"https://github.com/tanishqJain16/form-website"} link={"https://www.jsrforms.live/"} />
           <SmallCard img={sphurtiimg} title={"Sphurti'23"} github={"https://github.com/tanishqJain16/sphurtiWebsite2.0"} link={"https://ditusphurti.com/"} />
           <SmallCard img={myportfolioimg} title={"My Portfolio"} github={"https://github.com/tanishqJain16/MyPortfolio"} link={"https://my-portfolio-tanishqjain16.vercel.app/"} />
-          <SmallCard img={newsappimg} title={"NewsApp"} github={"https://github.com/tanishqJain16/newsApp"} link={""} />
+          <SmallCard img={newsappimg} title={"NewsApp"} github={"https://github.com/tanishqJain16/newsApp"} link={"https://my-portfolio-tanishqjain16.vercel.app/"} />
           <SmallCard img={youthopiaImg} title={"Youthopia'22"} github={"https://github.com/tanishqJain16/youthopiaWebsite"} link={"https://youthopia.dituniversity.co.in/"} />
         </div>
         <h1 className="headingInner">Backend<span>&nbsp;Projects</span></h1>
