@@ -62,7 +62,8 @@
     width: 25vw;
     padding: 0.5rem;
     border: none;
-    border-bottom: 2px solid #ce0aff;
+    border: 2px solid #ce0aff;
+    border-radius: 5px;
     margin-bottom: 1rem;
     outline: none;
     background: transparent;
@@ -74,13 +75,14 @@
     width: 25vw;
     padding: 0.5rem;
     border: none;
-    border-bottom: 2px solid #ce0aff;
-    margin-bottom: 1rem;
+    border: 2px solid #ce0aff;
+    border-radius: 5px;
     outline: none;
     background: transparent;
     color: white;
     font-size: 1rem;
     margin: auto 0;
+    resize: none;
 }
 
 .contact>.card>.card-body>.send {

@@ -14,13 +14,13 @@ function Contact() {
   }
 
   useEffect(() => {
-    ScrollReveal().reveal(".contact" , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
+    ScrollReveal().reveal(".contact", { delay: 500, duration: 1000, origin: 'top', distance: '50px' });
   }, [])
 
   const handlesubmit = async (e) => {
     e.preventDefault();
     setDisabled(true);
-    if(creds.name === "" || creds.email === "" || creds.message === ""){
+    if (creds.name === "" || creds.email === "" || creds.message === "") {
       alert("Please fill all the fields");
       setDisabled(false);
       return;
@@ -50,7 +50,7 @@ function Contact() {
         <div className="card-body">
           <div className="fields">
             {/* <label htmlFor="name">Name:</label> */}
-            <input type="text" id="name" name="name" placeholder="Your name.." onChange={handleChange} required />
+            <input type="text" id="name" name="name" placeholder="Your name" onChange={handleChange} required />
           </div>
           <div className="fields">
             {/* <label htmlFor="email">Email:</label> */}
