@@ -18,11 +18,12 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ce0aff;
+  background: #F5A302;
   border-radius: 10px;
+  display: none;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(135, 31, 135);
+  background: #F5A302;
 }

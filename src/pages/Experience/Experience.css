@@ -12,7 +12,7 @@
 }
 
 .experience>.experienceHeading>span {
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .experience>.experienceLanding {
@@ -38,7 +38,7 @@
 }
 
 .experience>.experienceLanding>.experienceLandingLeft>h1>span {
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .experience>.experienceLanding>.experienceLandingLeft>p {
@@ -52,7 +52,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .experience>.experienceLanding>.experienceLandingRight {

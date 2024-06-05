@@ -10,22 +10,22 @@
     margin-bottom: 5vh;
 }
 
-.project>.project__container>.headingInner{
+.project>.project__container>.headingInner {
     font-size: 2rem;
     font-weight: 900;
     display: flex;
     justify-content: start;
     margin-top: 2rem;
     margin-left: 1rem;
-    color: #ce0aff;
+    color: #F5A302;
 }
 
-.project>.project__container>.headingInner>span{
+.project>.project__container>.headingInner>span {
     color: #fff;
 }
 
 .project>.project__container>.project__container__title>span {
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .project>.project__container>.project__container__card {

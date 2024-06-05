@@ -1,7 +1,6 @@
 import "./Socials.css";
-import github from "../../assets/github.png"
-import linkedin from "../../assets/linkedin.png"
-import ig from "../../assets/ig.png"
+import { AiFillInstagram  } from "react-icons/ai";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 function Socials() {
     const handleGithub = () => {
@@ -17,9 +16,9 @@ function Socials() {
     }
   return (
     <div className="socials">
-        <img src={github} alt="" onClick={handleGithub}/>
-        <img src={ig} alt="" onClick={handleIg}/>
-        <img src={linkedin} alt="" onClick={handleLinkedin}/>
+        <FaGithub onClick={handleGithub}/>
+        <AiFillInstagram onClick={handleIg}/>
+        <FaLinkedinIn onClick={handleLinkedin}/>
     </div>
   )
 }

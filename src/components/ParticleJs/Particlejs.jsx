@@ -15,8 +15,8 @@ function Particlejs() {
     const particlesLoaded = useCallback(async container => {
         console.log(container);
     }, []);
-  return (
-    <Particles
+    return (
+        <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -51,7 +51,7 @@ function Particlejs() {
                 },
                 particles: {
                     color: {
-                        value: ["#BD10E0","#B8E986","#50E3C2","#FFD300","#E86363"],
+                        value: ["#F5A302", "#FFF8E2"],
                     },
                     links: {
                         color: "#ccc",
@@ -93,7 +93,7 @@ function Particlejs() {
                 detectRetina: false,
             }}
         />
-  )
+    )
 }
 
 export default Particlejs

@@ -39,6 +39,7 @@
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     border: 2px solid white;
+    font-weight: 900;
 }
 
 .home>.homeLanding>.home-left>.homeButtons>.cvbtn>a {
@@ -46,23 +47,22 @@
     color: #fff;
 }
 
-.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn {
-    background-color: #ce0aff;
-}
-
-.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn>a {
-    text-decoration: none;
+.home>.homeLanding>.home-left>.homeButtons>.cvbtn:hover {
+    background-color: #F5A302;
     color: #fff;
 }
 
-.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn:hover {
-    background-color: rgba(250, 4, 250, 0.319);
-    transform: scale(1.1);
+.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn {
+    background-color: #F5A302;
 }
 
-.home>.homeLanding>.home-left>.homeButtons>button:hover {
-    background-color: rgba(110, 110, 110, 0.319);
-    transform: scale(1.1);
+.home>.homeLanding>.home-left>.homeButtons>button>a {
+    font-weight: 900;
+}
+
+.home>.homeLanding>.home-left>.homeButtons>.aboutMeBtn:hover {
+    background-color: #FFF8E2;
+    color: #F5A302;
 }
 
 .home>.homeLanding>.home-left>h1 {
@@ -73,7 +73,7 @@
 }
 
 .home>.homeLanding>.home-left>h1>.home-left__name--color {
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 
@@ -85,8 +85,47 @@
     /* margin: 2rem; */
 }
 
-.home>.homeLanding>.home-right>img {
+.home>.homeLanding>.home-right>.imageBackground {
     width: 35rem;
+    height: 28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F5A302;
+    border-radius: 60% 40% 25% 25%;
+    box-shadow: 0 0 15px #FFF8E2;
+    margin: 0 1rem;
+}
+
+.home>.homeLanding>.home-right>.imageBackground:hover {
+    animation: borderSpin 1s infinite linear;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes borderSpin {
+    0% {
+        border-radius: 60% 40% 25% 25%;
+    }
+
+    25% {
+        border-radius: 40% 60% 25% 25%;
+    }
+
+    50% {
+        border-radius: 25% 25% 25% 25%;
+    }
+
+    75% {
+        border-radius: 25% 25% 25% 25%;
+    }
+
+    100% {
+        border-radius: 60% 40% 25% 25%;
+    }
+}
+
+.home>.homeLanding>.home-right>.imageBackground>img {
+    width: 28rem;
     border-radius: 20%;
 }
 
@@ -145,7 +184,7 @@
         margin-top: -9vh;
     }
 
-    .home>.homeLanding>.home-right{
+    .home>.homeLanding>.home-right {
         width: 100vw;
         height: 50vh;
         margin-bottom: 0;
@@ -169,6 +208,16 @@
         margin-top: 0;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .home>.homeLanding>.home-right>.imageBackground{
+        width: 25rem;
+    }
+
+    .home>.homeLanding>.home-right>.imageBackground>img {
+        width: 27.5rem;
+    }
 }
 
 @media screen and (max-width: 424px) {
@@ -213,5 +262,5 @@
         height: 2.5rem;
         font-size: 1rem;
     }
-    
+
 }

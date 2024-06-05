@@ -1,4 +1,4 @@
-.socials{
+.socials {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,26 +6,40 @@
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+    gap: 10px;
 }
 
-.socials>img{
+.socials>svg {
+    font-size: 2.5rem;
+    color: #F5A302;
+    cursor: pointer;
+}
+
+.socials>svg:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+    color: #FFF8E2;
+}
+
+.socials>img {
     width: 3rem;
     margin: 0 1rem;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 0 15px rgb(206, 10, 255);
+    box-shadow: 0 0 15px #F5A302;
 }
 
-.socials>img:hover{
+.socials>img:hover {
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px){
-    .socials{
+@media screen and (max-width: 768px) {
+    .socials {
         margin: 0;
     }
-    .socials>img{
+
+    .socials>img {
         width: 2rem;
     }
 }

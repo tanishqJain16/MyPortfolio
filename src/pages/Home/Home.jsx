@@ -1,5 +1,5 @@
 import "./Home.css";
-import landingimg from "../../assets/landing-image.jpg"
+import landingimg from "../../assets/landing-image.png"
 import { TypeAnimation } from "react-type-animation";
 import Particlejs from "../../components/ParticleJs/Particlejs";
 import Socials from "../../components/Socials/Socials";
@@ -39,6 +39,8 @@ function Home() {
                         sequence={[
                             1000,
                             `I'm a Web Developer`,
+                            1000,
+                            `I'm a Competitive Programmer`,
                         ]}
                         wrapper="span"
                         cursor={true}
@@ -59,7 +61,9 @@ function Home() {
                     </div>
                 </div>
                 <div className="home-right">
-                    <img src={landingimg} alt="landing-img" className="home-right__img" />
+                    <div className="imageBackground">
+                        <img src={landingimg} alt="landing-img" className="home-right__img" />
+                    </div>
                 </div>
             </div>
             <div className="homeAbout">

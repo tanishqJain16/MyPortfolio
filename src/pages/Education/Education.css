@@ -11,7 +11,7 @@
 }
 
 .education>.educationHeading>span {
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .education>.educationLanding {
@@ -37,7 +37,7 @@
 }
 
 .education>.educationLanding>.educationLandingLeft>h1>span {
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .education>.educationLanding>.educationLandingLeft>p {
@@ -51,7 +51,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    color: #ce0aff;
+    color: #F5A302;
 }
 
 .education>.educationLanding>.educationLandingRight {
