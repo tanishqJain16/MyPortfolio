@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import "./Navbar.css";
+import logo from "../../assets/MyName.png";
+import { useEffect, useState } from "react";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import { Link } from 'react-scroll';
 import { FaHome } from "react-icons/fa";
 import { IoSchoolSharp } from "react-icons/io5";
 import { AiFillProject } from "react-icons/ai";
 import { HiBuildingOffice } from "react-icons/hi2";
 import { IoMdContact } from "react-icons/io";
-import "./Navbar.css";
-import logo from "../../assets/MyName.png";
 
 function Navbar() {
-    let location = useLocation();
-    const navigate = useNavigate();
     const [menuClosed, setMenuClosed] = useState(true);
     const [scrolled, setScrolled] = useState(false);
 
@@ -31,26 +29,6 @@ function Navbar() {
         };
     }, []);
 
-    const navigateToHome = () => {
-        navigate("/");
-    };
-
-    const navigateToEdu = () => {
-        navigate("/education");
-    };
-
-    const navigateToPro = () => {
-        navigate("/projects");
-    };
-
-    const navigateToExp = () => {
-        navigate("/experience");
-    };
-
-    const navigateToCont = () => {
-        navigate("/contact");
-    };
-
     const toggleMenu = () => {
         setMenuClosed(!menuClosed);
     };
@@ -64,22 +42,52 @@ function Navbar() {
                 <div className={`${menuClosed ? "navbar-list" : "navbar-list-open"}`}>
                     <CloseIcon className="cross" onClick={toggleMenu} />
                     <ul>
-                        <li onClick={() => { setMenuClosed(true) }}><Link className={`${location.pathname === "/" ? "active" : ""}`} to="/">Home</Link></li>
-                        <li onClick={() => { setMenuClosed(true) }}><Link className={`${location.pathname === "/education" ? "active" : ""}`} to="/education">Education</Link></li>
-                        <li onClick={() => { setMenuClosed(true) }}><Link className={`${location.pathname === "/projects" ? "active" : ""}`} to="/projects">Projects</Link></li>
-                        <li onClick={() => { setMenuClosed(true) }}><Link className={`${location.pathname === "/experience" ? "active" : ""}`} to="/experience">Experience</Link></li>
-                        <li onClick={() => { setMenuClosed(true) }}><Link className={`${location.pathname === "/contact" ? "active" : ""}`} to="/contact">Contact</Link></li>
+                        <li onClick={() => { setMenuClosed(true) }}>
+                            <Link activeClass="active" to="home" spy={true} smooth={true} duration={500}>
+                                Home
+                            </Link>
+                        </li>
+                        <li onClick={() => { setMenuClosed(true) }}>
+                            <Link activeClass="active" to="education" spy={true} smooth={true} duration={500}>
+                                Education
+                            </Link>
+                        </li>
+                        <li onClick={() => { setMenuClosed(true) }}>
+                            <Link activeClass="active" to="project" spy={true} smooth={true} duration={500}>
+                                Projects
+                            </Link>
+                        </li>
+                        <li onClick={() => { setMenuClosed(true) }}>
+                            <Link activeClass="active" to="experience" spy={true} smooth={true} duration={500}>
+                                Experience
+                            </Link>
+                        </li>
+                        <li onClick={() => { setMenuClosed(true) }}>
+                            <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
+                                Contact
+                            </Link>
+                        </li>
                     </ul>
                     <MenuIcon className="menu" onClick={toggleMenu} />
                 </div>
             </div>
             <div className={`navBar2 ${scrolled ? "" : "hidden"}`}>
                 <div className="navbarContent">
-                    <FaHome onClick={navigateToHome} className={`${location.pathname === "/" ? "active" : ""}`} />
-                    <IoSchoolSharp onClick={navigateToEdu} className={`${location.pathname === "/education" ? "active" : ""}`} />
-                    <AiFillProject onClick={navigateToPro} className={`${location.pathname === "/projects" ? "active" : ""}`} />
-                    <HiBuildingOffice onClick={navigateToExp} className={`${location.pathname === "/experience" ? "active" : ""}`} />
-                    <IoMdContact onClick={navigateToCont} className={`${location.pathname === "/contact" ? "active" : ""}`} />
+                    <Link to="home" activeClass="active" spy={true} smooth={true} duration={500}>
+                        <FaHome className="navIcon" />
+                    </Link>
+                    <Link to="education" activeClass="active" spy={true} smooth={true} duration={500}>
+                        <IoSchoolSharp className="navIcon" />
+                    </Link>
+                    <Link to="project" activeClass="active" spy={true} smooth={true} duration={500}>
+                        <AiFillProject className="navIcon" />
+                    </Link>
+                    <Link to="experience" activeClass="active" spy={true} smooth={true} duration={500}>
+                        <HiBuildingOffice className="navIcon" />
+                    </Link>
+                    <Link to="contact" activeClass="active" spy={true} smooth={true} duration={500}>
+                        <IoMdContact className="navIcon" />
+                    </Link>
                 </div>
             </div>
         </>

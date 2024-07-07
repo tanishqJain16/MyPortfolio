@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -20,10 +20,9 @@
 ::-webkit-scrollbar-thumb {
   background: #F5A302;
   border-radius: 10px;
-  display: none;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #F5A302;
+  background: rgb(135, 31, 135);
 }

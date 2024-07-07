@@ -19,7 +19,7 @@ function SmallCard(props) {
                 <p>{props.title}</p>
                 <div className="smallCard__icon">
                     <GithubIcon onClick={handleGithub} />
-                    <LinkIcon onClick={handleLink}/>
+                    {props.link && <LinkIcon onClick={handleLink}/>}
                 </div>
             </div>
         </div>

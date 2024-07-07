@@ -1,1 +1,0 @@
- className={`${menuClosed?"navbar-list":"navbar-list-open"}`}

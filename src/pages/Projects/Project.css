@@ -1,6 +1,8 @@
 .project {
-    padding-top: 11vh;
     padding-bottom: 2rem;
+    margin-top: 2rem;
+    min-height: 89vh;
+    /* padding-top: 11vh; */
 }
 
 .project>.project__container>.project__container__title {

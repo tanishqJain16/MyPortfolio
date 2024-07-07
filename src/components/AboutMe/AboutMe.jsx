@@ -1,14 +1,15 @@
 import "./AboutMe.css"
 import aboutImg from "../../assets/aboutMe.jpeg"
-import { useNavigate } from "react-router-dom"
+// import { useNavigate } from "react-router-dom"
 // import { Fade } from "react-awesome-reveal";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
 
 function AboutMe() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const handleContactMe = () => {
-        navigate("/contact");
+        // navigate("/contact");
+        console.log("temp")
     }
     useEffect(() => {
     ScrollReveal().reveal('.aboutMeLeft__img' , {delay: 500, duration: 1000 , origin: 'left', distance: '50px'});

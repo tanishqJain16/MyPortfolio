@@ -1,5 +1,4 @@
 .navbar {
-    /* background-color: #1a1a1a; */
     background: transparent;
     color: #fff;
     width: 100vw;
@@ -20,26 +19,30 @@
     visibility: hidden;
 }
 
-.navbar>.navbar__logo>img {
+.navbar__logo > img {
     width: 15rem;
 }
 
-.navbar>.navbar-list>ul {
+.navbar__logo-open > img {
+    width: 15rem;
+}
+
+.navbar-list > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
-.navbar>.navbar-list>.menu {
+.navbar-list .menu {
     display: none;
 }
 
-.navbar>.navbar-list>.cross {
+.navbar-list .cross {
     display: none;
 }
 
-.navbar>.navbar-list>ul>li {
+.navbar-list > ul > li {
     list-style: none;
     margin: 0rem 1rem;
     color: #a3a2a2;
@@ -48,42 +51,41 @@
     font-size: 1.1rem;
 }
 
-.navbar>.navbar-list>ul>li>a {
+.navbar-list > ul > li > a {
     text-decoration: none;
     color: #a3a2a2;
     padding-bottom: 0.3rem;
 }
 
-.navbar>.navbar-list>ul>li>.active {
+.navbar-list > ul > li > .active {
     text-decoration: none;
     pointer-events: none;
     color: #F5A302;
     font-size: 1.5rem;
     font-weight: 800;
     border-bottom: 3px solid #F5A302;
-    /* border-radius: 7px; */
 }
 
-.navbar>.navbar-list>ul>li>a:hover {
+.navbar-list > ul > li > a:hover {
     color: #fff;
 }
 
-.navbar>.navbar__logo-open>img {
-    width: 15rem;
-}
-
-.navbar>.navbar-list-open>ul {
+.navbar-list-open > ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
 
-.navbar>.navbar-list-open>i {
+.navbar-list-open .menu {
     display: none;
 }
 
-.navbar>.navbar-list-open>ul>li {
+.navbar-list-open .cross {
+    display: none;
+}
+
+.navbar-list-open > ul > li {
     list-style: none;
     margin: 0rem 1rem;
     color: #fff;
@@ -92,13 +94,13 @@
     font-size: 1.1rem;
 }
 
-.navbar>.navbar-list-open>ul>li>a {
+.navbar-list-open > ul > li > a {
     text-decoration: none;
     color: #fff;
     padding-bottom: 0.3rem;
 }
 
-.navbar>.navbar-list-open>ul>li>.active {
+.navbar-list-open > ul > li > .active {
     text-decoration: none;
     color: #F5A302;
     font-size: 1.5rem;
@@ -107,55 +109,50 @@
     border-radius: 7px;
 }
 
-.navbar>.navbar-list-open>ul>li>a:hover {
+.navbar-list-open > ul > li > a:hover {
     color: #fff;
 }
 
-
-
 @media screen and (max-width: 768px) {
-
-    .navbar{
+    .navbar {
         justify-content: center;
     }
 
-    .navbar>.navbar-list>ul {
+    .navbar-list > ul {
         display: none;
     }
 
-    .navbar>.navbar-list>.menu {
+    .navbar-list .menu {
         display: none;
         font-size: 2rem;
         margin-right: 1rem;
         cursor: pointer;
     }
 
-    .navbar>.navbar-list>.cross {
+    .navbar-list .cross {
         display: none;
     }
 
-    .navbar>.navbar__logo-open {
+    .navbar__logo-open {
         display: none;
     }
 
-
-    .navbar>.navbar-list-open {
+    .navbar-list-open {
         height: 100vh;
         width: 100vw;
         margin-top: 2rem;
-
     }
 
-    .navbar>.navbar-list-open>ul {
+    .navbar-list-open > ul {
         flex-direction: column;
         justify-content: center;
     }
 
-    .navbar>.navbar-list-open>.menu {
+    .navbar-list-open .menu {
         display: none;
     }
 
-    .navbar>.navbar-list-open>.cross {
+    .navbar-list-open .cross {
         display: flex;
         position: absolute;
         right: 1rem;
@@ -165,18 +162,15 @@
         cursor: pointer;
     }
 
-    .navbar>.navbar-list-open>ul>li {
+    .navbar-list-open > ul > li {
         margin: 2rem 1rem;
         font-size: 1.5rem;
     }
 
-    .navbar>.navbar-list-open>ul>li>.active {
+    .navbar-list-open > ul > li > .active {
         font-size: 2rem;
     }
 }
-
-
-
 
 .navBar2 {
     color: #fff;
@@ -200,7 +194,7 @@
     visibility: hidden;
 }
 
-.navBar2>.navbarContent {
+.navbarContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,11 +202,11 @@
     padding: 0.8rem 1.5rem;
     gap: 5rem;
     backdrop-filter: blur(28px);
-    border-radius: 20px;
+    border-radius: 260px;
     background: rgba(85, 85, 85, 0.5);
 }
 
-.navBar2>.navbarContent>svg {
+.navbarContent > a > svg {
     font-size: 3rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -220,11 +214,11 @@
     color: #a3a2a2;
 }
 
-.navBar2>.navbarContent>svg:hover {
+.navbarContent > a > svg:hover {
     color: #F5A302;
 }
 
-.navBar2>.navbarContent>svg.active {
+.navbarContent > .active > svg {
     color: #fff;
     background: linear-gradient(90deg, #FFA500, #eabd2a);
 }
@@ -234,11 +228,11 @@
         bottom: 0;
     }
 
-    .navBar2>.navbarContent {
+    .navbarContent {
         gap: 1.5rem;
     }
 
-    .navBar2>.navbarContent>svg {
+    .navbarContent > svg {
         font-size: 2.5rem;
     }
 }

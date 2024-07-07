@@ -14,7 +14,7 @@ function Education() {
   }, []);
 
   return (
-    <div className="education">
+    <div className="education" id="education">
       <Particlejs />
       <div className="educationLanding">
         <div className="educationLandingLeft">
