@@ -2,42 +2,48 @@ import { useEffect, useState } from "react";
 import Particlejs from "../../components/ParticleJs/Particlejs";
 import "./Contact.css";
 import SendIcon from '@material-ui/icons/Send';
-import { doc, setDoc } from "firebase/firestore";
-import { db } from "../../firebase";
 import ScrollReveal from "scrollreveal";
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 
 function Contact() {
   const [disabled, setDisabled] = useState(false);
-  const [creds, setCreds] = useState({ name: "", email: "", message: "" })
+  const [creds, setCreds] = useState({ name: "", email: "", message: "" });
+
   const handleChange = (e) => {
     setCreds({ ...creds, [e.target.name]: e.target.value });
   }
 
   useEffect(() => {
-    ScrollReveal().reveal(".contact" , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
-  }, [])
+    ScrollReveal().reveal(".contact", { delay: 500, duration: 1000, origin: 'top', distance: '50px' });
+  }, []);
 
   const handlesubmit = async (e) => {
     e.preventDefault();
     setDisabled(true);
-    if(creds.name === "" || creds.email === "" || creds.message === ""){
-      alert("Please fill all the fields");
+    if (creds.name === "" || creds.email === "" || creds.message === "") {
+      toast.error("Please fill all the fields");
       setDisabled(false);
       return;
     }
-    await setDoc(doc(db, "contact", creds.email), {
-      name: creds.name,
-      email: creds.email,
-      message: creds.message
-    }).then(() => {
+
+    toast.promise(
+      emailjs.send("service_lpji8hi", "template_hjoiu2j", {
+        from_name: creds.name,
+        to_name: "Tanishq",
+        message: creds.message + "\n\n" + "Sender's Email: " + creds.email,
+      }, "ur4QbpflnJuieB0i3"),
+      {
+        loading: 'Sending message...',
+        success: 'Message sent successfully!',
+        error: 'Failed to send message.'
+      }
+    ).then(() => {
       setDisabled(false);
-      alert("Message sent successfully");
       setCreds({ name: "", email: "", message: "" });
-    }).catch((error) => {
+    }).catch(() => {
       setDisabled(false);
-      alert(error.message);
-    }
-    );
+    });
   }
 
   return (
@@ -49,16 +55,13 @@ function Contact() {
         </div>
         <div className="card-body">
           <div className="fields">
-            {/* <label htmlFor="name">Name:</label> */}
-            <input type="text" id="name" name="name" placeholder="Your name.." onChange={handleChange} required />
+            <input type="text" id="name" value={creds.name} name="name" placeholder="Your name.." onChange={handleChange} required />
           </div>
           <div className="fields">
-            {/* <label htmlFor="email">Email:</label> */}
-            <input type="email" id="email" name="email" placeholder="Your Email.." onChange={handleChange} required />
+            <input type="email" id="email" name="email" value={creds.email} placeholder="Your Email.." onChange={handleChange} required />
           </div>
           <div className="fields">
-            {/* <label htmlFor="message">Message:</label> */}
-            <textarea rows={4} type="text" id="message" name="message" placeholder="Your message.." onChange={handleChange} required />
+            <textarea rows={4} type="text" id="message" value={creds.message} name="message" placeholder="Your message.." onChange={handleChange} required />
           </div>
           <button className="send" disabled={disabled} onClick={handlesubmit} style={{ fontFamily: "Arial, FontAwesome" }}>SEND &nbsp; <SendIcon /></button>
         </div>
@@ -67,4 +70,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Contact;

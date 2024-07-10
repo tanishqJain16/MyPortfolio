@@ -5,12 +5,14 @@ import Projects from './pages/Projects/Project'
 import Experience from './pages/Experience/Experience'
 import Contact from './pages/Contact/Contact'
 import Navbar from './components/Navbar/Navbar'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
  
 
   return (
     <>
+        <Toaster />
         <Navbar/>
         <Home/>
         <Education/>

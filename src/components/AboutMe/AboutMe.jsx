@@ -4,12 +4,13 @@ import aboutImg from "../../assets/aboutMe.jpeg"
 // import { Fade } from "react-awesome-reveal";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AboutMe() {
-    // const navigate = useNavigate();
     const handleContactMe = () => {
-        // navigate("/contact");
-        console.log("temp")
+        //navigate to contact section
+        const contact = document.getElementById("contact");
+        contact.scrollIntoView({ behavior: "smooth" });
     }
     useEffect(() => {
     ScrollReveal().reveal('.aboutMeLeft__img' , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
