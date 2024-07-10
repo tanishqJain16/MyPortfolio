@@ -52,7 +52,7 @@ function Home() {
                     </div>
                     <div className="homeButtons">
                         <button className="cvbtn">
-                            <a href="https://drive.google.com/file/d/13Q_zFuyS1ebWPgwAl8C84pUgd8ZNHpBD/view?usp=drive_link" target="_blank" rel="noreferrer">
+                            <a href="https://drive.google.com/file/d/1hDSRyURhm85dSI28NqU4NuVg_wTg2ZzS/view?usp=sharing" target="_blank" rel="noreferrer">
                                 View CV
                             </a>
                         </button>

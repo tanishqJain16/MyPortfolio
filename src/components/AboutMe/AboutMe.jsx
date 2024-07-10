@@ -12,10 +12,10 @@ function AboutMe() {
         console.log("temp")
     }
     useEffect(() => {
-    ScrollReveal().reveal('.aboutMeLeft__img' , {delay: 500, duration: 1000 , origin: 'left', distance: '50px'});
+    ScrollReveal().reveal('.aboutMeLeft__img' , {delay: 500, duration: 1000 , origin: 'top', distance: '50px'});
     ScrollReveal().reveal('.aboutHeading' , {delay: 1000, duration: 1000 , origin: 'top', distance: '50px'});
-    ScrollReveal().reveal('.aboutMeRight__content__para' , {delay: 1500, duration: 1000 , origin: 'right', distance: '50px'});
-    ScrollReveal().reveal('.contactMeBtn' , {delay: 2000, duration: 1000 , origin: 'bottom', distance: '50px'});
+    ScrollReveal().reveal('.aboutMeRight__content__para' , {delay: 1500, duration: 1000 , origin: 'top', distance: '50px'});
+    ScrollReveal().reveal('.contactMeBtn' , {delay: 2000, duration: 1000 , origin: 'top', distance: '50px'});
     }, [])
     return (
         <div className="aboutMe">

@@ -229,10 +229,15 @@
     }
 
     .navbarContent {
-        gap: 1.5rem;
+        padding: 0.4rem 1.5rem;
+        gap: 0.8rem;
     }
 
-    .navbarContent > svg {
+    .navbarContent > a > svg {
         font-size: 2.5rem;
+    }
+
+    .navbarContent > a > svg:hover {
+        color: white;
     }
 }
