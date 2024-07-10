@@ -1,6 +1,6 @@
 import Particlejs from "../../components/ParticleJs/Particlejs"
 import "./Experience.css"
-import experienceImg from "../../assets/experienceImg.JPEG"
+import experienceImg from "../../assets/experienceImg.jpeg"
 import ExperienceCard from "../../components/ExperienceCard/ExperienceCard"
 import gssoc from "../../assets/gssoc.jpg"
 import ieee from "../../assets/ieee.jpeg"
