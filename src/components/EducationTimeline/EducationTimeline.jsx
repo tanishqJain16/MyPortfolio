@@ -19,7 +19,7 @@ function EducationTimeline() {
                     <h3 className="vertical-timeline-element-title" style={{ fontSize: "1.2rem" }}>Bachelor of Technology in Computer science and engineering.</h3>
                     <h4 className="vertical-timeline-element-subtitle" style={{ color: "#F5A302", fontWeight: "900" }}>DIT University, Dehradun</h4>
                     <p>
-                        Student <br /> 9.3 CGPA
+                        Student <br /> 9.47 CGPA
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

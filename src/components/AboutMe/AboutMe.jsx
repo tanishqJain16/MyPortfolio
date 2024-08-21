@@ -31,7 +31,7 @@ function AboutMe() {
                     </div>
                     <div className="aboutMeRight__content">
                         <p className="aboutMeRight__content__para">
-                            I am a 3rd year student pursuing B.Tech in Computer Science and Engineering from DIT University, Dehradun. I am a <span>Full Stack Developer</span> with good knowledge of <span>Frontend</span> and <span>Backend</span> techniques. I love spending time on <span>fixing little details</span> and <span>optimizing</span> web apps. Also I like working in a <span>team</span> and <span>collaborating</span> with people.
+                            I am a final year student pursuing B.Tech in Computer Science and Engineering from DIT University, Dehradun. I am a <span>Full Stack Developer</span> with good knowledge of <span>Frontend</span> and <span>Backend</span> techniques. I love spending time on <span>fixing little details</span> and <span>optimizing</span> web apps. Also I like working in a <span>team</span> and <span>collaborating</span> with people.
                         </p>
                         <button className="contactMeBtn" onClick={handleContactMe}>
                             Contact Me
